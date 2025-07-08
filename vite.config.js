@@ -15,4 +15,13 @@ export default defineConfig({
       shared: ['react', 'react-dom']
     })
   ],
+  build:{
+    target:'esnext'
+  },
+  server:{
+    cors:true,
+    headers:{
+      'Access-Control-Allow-Origin': '*'
+    }
+  }
 })
